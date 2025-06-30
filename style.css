@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./WhatsApp\ Image\ 2025-06-30\ at\ 1.07.53\ PM.jpeg); 
+  background-size: 99%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del mensaje */
+.container {
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: aparecer 2s ease-in-out;
+  max-width: 600px;
+  margin: 5% auto;
+}
+
+/* Título */
+h1 {
+  color: #ff4081; 
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Texto principal */
+.mensaje {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Firma al final */
+.firma {
+  margin-top: 30px;
+  color: #555;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+/* Animación de aparición */
+@keyframes aparecer{
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Boton de musica */
+.boton-musica{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
